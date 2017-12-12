@@ -1,0 +1,33 @@
+\section{Decisions}
+
+While developing you game you will have made various decisions about the development.  In this section you discuss the decisions you make, why you made them, and would you make the same decision with the information and experience you now have.
+
+You can structure the section like this
+
+\subsection{Perspective}
+Working out the way to display the game.  We have a choices of:
+
+\begin{description}
+\item[2D] allows simpler assets and lower processing cost
+\item[Fake 2.5D] A traditional game look 
+\item[3D] requires more assets but looks better
+\end{description}
+
+We choose to go with 2.5D iso to give a feel for 3D while keeping the asset list short. We used a game template city builder kit to speed up the development process.  This gave us a 2.5D system as the default view. 
+
+This was a good discussion, as we were able to get the assets form a third party.  We should have gone with the standard perspective rather than the clash of clans 37.5 degrees
+
+\subsection{AI characters}
+CityCop needed to simulate a world.  We decided to simulate a village.  This leads to a discussion on how to simulate the the AI
+
+\begin{description}
+\item[Desire model] uses a level of desire for each action and lets the sims move about the world based on the desires they have
+\item[Random] let the sims move around the world at random 
+\item[Scripted] AI would require us to write a path for each of the agents.  Easy to control but time consuming 
+\end{description}
+
+We choose to use the Desire model as it would allow us to have a richer environment for future expansions for new levels and scenarios.
+
+In the level of game we finally developed the complexity of the desire model was not obvious.  We could have implemented a purely random system and had a similar experience for the player 
+
+
